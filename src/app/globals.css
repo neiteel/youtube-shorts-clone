@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.swiper-slide-active img {
+  @apply pointer-events-none opacity-0 transition-opacity;
+}
+
+.swiper-slide-active .player {
+  @apply opacity-100 transition-opacity duration-200;
+}
